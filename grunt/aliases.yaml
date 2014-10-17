@@ -1,0 +1,15 @@
+default:
+    - 'jshint'
+    - 'uglify:dev'
+    - 'concurrent:watch'
+
+prod:
+    - 'jshint'
+    - 'uglify:prod'
+    - 'compass:prod'
+
+deploy:
+    - 'jshint'
+    - 'uglify:prod'
+    - 'compass:prod'
+    - 'shell'
